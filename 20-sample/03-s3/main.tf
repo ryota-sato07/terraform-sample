@@ -54,6 +54,7 @@ resource "aws_s3_bucket_policy" "alb_log" {
   policy = data.aws_iam_policy_document.alb_log.json
 }
 
+# 環境変数用の定義
 variable "aws_account_id" {}
 
 data "aws_iam_policy_document" "alb_log" {
